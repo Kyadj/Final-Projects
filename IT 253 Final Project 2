@@ -1,0 +1,38 @@
+IT 253 Project Two Security Plan Template
+
+Complete this template by replacing the bracketed text with the relevant information.
+
+A.	Roles and Responsibilities
+IT security manager: manage access controls, scanning for vulnerabilities, and incident response.
+-	This company currently lacks documented polies or oversight of their security program. This person would oversee ensuring those are implemented. 
+System admin: ensure backups are in place, apply any patches needed, and install software and hardware as needed. 
+-	This company has an outdated Apache version, shared admin accounts, and no regular backups. This role would ensure that these are taken care of regularly.
+Network engineer: Implements network infrastructure, configure equipment, and monitor traffic.
+-	This company currently has open ports and uses VNC from anywhere in the world. This role would ensure encryptions be put in place and the network is configured correctly.
+Manager: Ensure teams follow policies, complete training, and report anything suspicious.
+-	This company does not have any structured training and no responsibility. This role would ensure all employees are getting trained correctly and following all policies.
+Employees: complete training, follow policies, report suspicious activity.
+-	This company has higher risk of phishing and poor credentials. Employees need to ensure they are staying on top of security. 
+
+B.	User Awareness Training
+Phishing simulations: as employees are not aware of what to look for with phishing, simulations should be provided after training to ensure employees handle them correctly.
+
+Data handling: employees should learn how to handle data and ensure encryption is in place whenever they send sensitive data no matter who it is to. 
+
+Credential information: employees need to know why it’s important to use secure passwords, never share credentials, and log off computers when not using them.
+
+SOX training: Employees may not know what this law entails and how to stay compliant, training on laws the company needs to follow should be provided.
+
+C.	Access Control
+All accounts should be created using role-based access controls. This ensures that each employee is given permission for what they need and no more right from the start. This will avoid any accidental misuse as the employees learn how to handle data. There should be no shared accounts, every employee needs their own account to maintain accountability. 
+Accounts should be reviewed quarterly to ensure they are all still configured correctly. This will also include deactivating any unused accounts and adjusting permissions as needed. All accounts need to be using MFA and have changed their password quarterly. If these are not taken care of, follow up with the employee as to why and make sure their account is secured correctly. 
+D.	Vulnerability Management
+Scanning: systems should be scanned bi-weekly for outdated software, misconfiguration, and exposed services. This would avoid problems like outdated Apache services and misconfigured firewall. 
+Patch management: All patches should be installed within 24 hours of release so ensure systems stay secure. This would ensure ransomware would be such a high risk as patches would be installed quickly.
+Penetration testing: systems should be tested for weaknesses. This would let the company know of any unknown vulnerabilities in their system to avoid any breaches. 
+
+E.	Backup and Recovery
+Full system backups should happen weekly, and copies of backups should be kept on site and in a secure off-site location to ensure the company can be back up quickly even if something were to happen to one backup. Backups should be tested quarterly to ensure they are able to be used to avoid any issues implementing them if needed. 
+
+F.	Internet-Facing Security
+To start, by introducing the network engineer, the firewall would be properly configured, and no open ports would be left open which reduces available attack surface. With MFA and password safety being introduced, it will prevent outside sources being able to gain access by easily stealing credentials. With phishing training, attackers won’t be able to take advantage of employees’ lack of knowledge to send unknown links. And lastly with vulnerability testing and patching, networks will not have so many weaknesses preventing attackers from taking advantage of them.
