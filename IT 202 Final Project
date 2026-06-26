@@ -1,0 +1,251 @@
+Problem 1:
+Issue with accessing SharePoint.
+Gather Information
+Can the user access other websites or is the issue specific to this one?
+Have you accessed SharePoint before without issue?
+If an error message pops up, what does it say?
+When did the issue first occur?
+What browser and OS is the user using?
+
+Identify What Has Changed
+Have there been any recent updates to SharePoint server or browser settings?
+Has there been any network issues recently?
+Any changes to security that might block access to SharePoint?
+
+Create a Hypothesis
+Based on the responses it could be:
+The browser itself being outdated for the newest SharePoint update.
+An update has restricted access to SharePoint.
+A user’s permissions to SharePoint have been changed or taken away. 
+
+Determine the Appropriate Fix
+Has the user tried accessing SharePoint from a different browser?
+Check SharePoint server for recent updates and figure out what version is needed for it to work on user’s computer.
+Review users account settings and permissions to determine if their access was taken away.
+
+Implement the Fix
+Guide user on steps to fixing the issue themselves if it is an easy fix.
+Make the changes myself if the issue is more complex.
+
+Ensure Satisfaction
+Follow up with the user on the issue making sure everything is working well and if they are happy with the fix.
+
+Document the Solution
+User sent in ticket that they were no longer able to access SharePoint. First, I gathered information on if the user was able to access SharePoint from other locations as well as any error messages that were popping up. Then I asked if there had been any recent changes to their system or security. Next I checked any recent updates and made sure they were compatible to be run on their system as well as I reviewed the users security permissions to make sure nothing was accidentally changed to quick the user out. Finally, I checked with user that they were now able to access SharePoint and if they had any more concerns. 
+
+
+
+Problem 2:
+Blue screen after updated operating system.
+Gather Information
+Can you provide the error code or message displayed on blue screen if there is one?
+Have you been using the computer fine since the upgrade or is this the first time you have turned it on since?
+Was any other hardware or software added to the computer after?
+
+Identify What Has Changed
+The user has upgraded their computer to a new OS.
+
+
+Create a Hypothesis
+Incompatibility with new operating system and hardware.
+Any software reinstalled may not be compatible with the new operating system.
+The upgrade process may have failed itself and may need to be reinstalled.
+
+Determine the Appropriate Fix
+Use windows recovery environment to perform a system restore to the point before the issue begins. 
+Check the system’s hardware compatibility with the new operating system.
+
+
+Implement the Fix
+If a specific hardware piece were identified to be incompatible, I would update the driver or uninstall problem software for now. Or work on getting updated hardware for the system.
+If the system restore fixes the issue, then I would know to problem is with the upgrade itself. I would check to make sure everything is backed up, and once I know everything is compatible, I would try the install again.
+
+Ensure Satisfaction
+Check with the user after the fix has been completed to make sure no other issues have been detected and make sure they are happy with the fix.
+
+Document the Solution
+User sent in ticket that they were getting blur screened after updating operating system. First, I gathered information on what error code they were getting and how long this may have been happening. After I checked that their system had compatibility with current hardware to allow for a new operating system. Once all hardware was checked to be up to date, I used system restore to see if the issue was with the install. Then I reinstalled the operating system making sure that there were no errors this time. Finally, I checked with the user that everything looked all right and if they had any more issues. 
+
+
+
+
+Problem 3:
+HOU Security Console does not allow login.
+
+Gather Information
+What error message are you getting when trying to log in?
+Has your password recently changed or been reset?
+Do any other users have a similar problem?
+Can you access it on other systems or browsers with your credentials or is it only on this one?
+When did this issue first occur? 
+
+Identify What Has Changed
+Look for any recent updates to the security console.
+Have there been changes to firewall settings that could block access?
+Any recent password changes?
+Any updates on the computer that could affect access?
+
+Create a Hypothesis
+Users’ credentials are incorrect or expired.
+Users may have been locked out of their account.
+A system update is affecting login.
+Firewall issues are blocking access.
+
+Determine the Appropriate Fix
+Change user’s password.
+Check user account for any restrictions.
+Check the security console for any errors around the time of issue.
+Check with the network team about any recent firewall updates.
+
+Implement the Fix
+Reset password or unblock user’s account.
+Rollback any updates preventing login.
+Work with network team to get firewall to stop preventing access.
+
+Ensure Satisfaction
+Check with the user that there are no other issues, and they are happy with the result.
+
+Document the Solution
+User sent in ticket that they are unable to access HOU security console. I started by gathering information on any recent changes to the computer or their permissions. Then with the given information I checked user’s credentials to make sure their password hadn’t changed or locked them out. I also checked that any system updates hadn’t removed their access to the security console. Then I went in to fix the user’s password and any security measures that may be blocking the user. Finally, I checked with user that they were able to access the security console and that they had no further questions. 
+
+
+
+Problem 4:
+Adding capabilities to DocuSign to send documents for signatures.
+Gather Information
+What role does the user currently have?
+What type of documents are you trying to send? (so, I know what type of policies need to be considered)
+Is this request for just today or full-time access?
+
+Identify What Has Changed
+Why does this user need access to this new role, have they had a change in job responsibilities? 
+
+Create a Hypothesis
+The user does not have access to this role and needs a change to their settings.
+
+Determine the Appropriate Fix
+Review current role and updating responsibilities, if user is allowed to have access to this new role, then change user settings. 
+
+Implement the Fix
+Update user role settings to allow for them to sign documents.
+
+Ensure Satisfaction
+Ensure the user is happy with change and can use their new role. 
+
+Document the Solution
+User created a ticket requesting that their role capabilities be changed to include the ability to send documents for signature. I started by gathering information on why they needed these permissions and what specific permissions they will need. I then changed the user’s role to allow them access to DocuSign. Finally, I checked with user that they were able to use new permissions and checked to make sure they had no other issues concerning roles. 
+
+
+
+Problem 5:
+Error loading Operating system.
+Gather Information
+Was the operating system, hardware or software just updated?
+Have there been any other issues such as crashes before this issue?
+Is this the first time this happened, or has it occurred before?
+
+Identify What Has Changed
+Any recent updates that were not completed successfully.
+New hardware that may be incompatible.
+Changes to BIOS/UEFI settings.
+
+Create a Hypothesis
+The boot system may have been damaged.
+The system files may have been corrupted.
+There may be some issues with the hardware.
+BIOS/UEFI settings may have been changed, affecting boot up.
+
+Determine the Appropriate Fix
+Access BIOS settings to see is it correctly doing its job.
+Check that the hard drive is connected correctly.
+
+Implement the Fix
+Correct BIOS settings if they were changed.
+If the system is too corrupted, do a full system restore.
+
+Ensure Satisfaction
+Check with the user to see that they are happy with their fix and if they have any other issues. 
+
+Document the Solution
+Users created a ticket that they were receiving an error on loading the operating system. I started with gathering information about their system and identifying what had changed. From that I determined it was something to do with the boot up sequence or a loose hard drive. I then checked to see which issue it was and fixed it. Finally, I checked with the user that the operating system was indeed working and that they had no other concerns. 
+
+
+
+Problem 6:
+Phone call: Issue logging in due to expired password.
+Gather Information
+User has said that the system is saying their password is expired after they reset their password recently.
+The user was sent a new password link and tried changing it but was given an error.
+
+Identify What Has Changed
+Users have recently changed their password.
+
+Create a Hypothesis
+The user may still be entering the wrong password after changing it.
+The user may be trying to use a previously used password that the system doesn’t allow.
+
+Determine the Appropriate Fix
+Send the user a new reset password link and have them let me know if there are any errors showing up.
+
+Implement the Fix
+Make sure the user is using a new unique password and not one they have used recently.
+
+Ensure Satisfaction
+Check with the user that they are now able to access their account. I would also try to provide some ways for them to remember their password, so they don’t have to have more trouble with this issue. 
+
+Document the Solution
+User has contacted us that their newly changed password is no longer working. I sent the user a new password link and had them reset it again. User states that it’s not letting the user change it and red letters are showing up, but they are not able to read them. I told them that might be due to either mismatched passwords or the user is trying to enter a repeat password and the system does not allow that. User tried again with a brand-new password and was successfully able to change their password and log in.
+
+
+Problem 7:
+Phone call: Unable to access Wi-Fi with MacBook in Cafe.
+Gather Information
+Ask what version of mac they are using? They are using a macOS Catilina 10.15.4.
+Asked the user to check wi-fi signal and make sure they are connected to right one and had user enter employee username and password.
+Asked if user had the message “Connected to Cafenet.” After going through steps.
+
+Identify What Has Changed
+User is using a new device to connect to Wi-Fi.
+User is in a new location trying to access Wi-Fi.
+
+Create a Hypothesis
+User has not connected to the Wi-Fi in the café.
+Users may be trying to connect to a different Wi-Fi.
+Users may not be fully connected and didn’t enter their username and password after trying to connect initially.
+
+Determine the Appropriate Fix
+Have the user check that they are using the right Wi-Fi network and have them log into it.
+
+Implement the Fix
+User has verified they are connected to the Wi-Fi and has entered their credentials. 
+
+Ensure Satisfaction
+Check that they were able to access the Wi-Fi after following the steps provided and that they no longer have any issue.
+
+Document the Solution
+User called in stating that they were not able to access Wi-Fi from the café using their MacBook. After gathering information, I had them go through the process of connecting to the Wi-Fi for the café, entering their credentials, then confirming they are able to access it now. After providing them with these steps they were able to use the Wi-Fi to access their work.
+
+
+Problem 8:
+Online chat: unable to edit PDF.
+Gather Information
+Ask what version of acrobat pro they are using? They state that they don’t have it and say an error pops up.
+Ask what the error is? They state it says access denied.
+
+Identify What Has Changed
+User is trying to edit a pdf without acrobat pro.
+
+Create a Hypothesis
+Users need to download acrobat for them to be able to edit the pdf.
+
+Determine the Appropriate Fix
+User needs to have acrobat pro downloaded.
+
+Implement the Fix
+Ticket has been created to have a tech sent to install software.
+
+Ensure Satisfaction
+Communicate with user that there will be a delay of 2 hrs. before software is installed and make sure they are ok with this. Communicate with them that the ticket has been created and that a tech will be sent soon.
+
+Document the Solution
+User contacted us that they are unable to edit a pdf file. After gathering information, I have found that they have not installed acrobat pro to their device which is needed to work on the pdf. Ticket was created to have a tech come out to install software with a 2-hour eta for the installation process. Added note to ticket that the user with be in a meeting for an hour after the ticket was created.
