@@ -1,0 +1,115 @@
+// Rules: The first player calls out two numbers: first, how many dice on the table he or she thinks have 
+been rolled as a number between one and six. For example, player one could say “two fives,” 
+which means he or she thinks there are at least two dice that are fives among all the players’ 
+dice (including his or her own).  
+
+At this point, all players can accept what has been called out and move on to player two 
+or call player one out, which will end the round and result in a winner or loser for the 
+round. 
+
+If player one calls out “two fives,” it does not matter whether player one has a five or not as 
+bluffing is allowed in Liar’s Dice. It only matters if another player believes player one is bluffing 
+and calls him or her out on it. In that instance, all dice must be revealed. If player one is correct, 
+the player wins. If player one is wrong, then the player who called him/her out is the winner. 
+The round is then over. 
+
+If player one’s call is accepted, then player two calls out a number. The first number must be 
+greater than what player one called. For example, if player one called out “two fives,” player 
+two must call out three or higher for his or her first number, so “three fives,” “three fours,” or 
+four twos” would all be acceptable. “One five” or “two sixes” would be unacceptable. 
+
+Game play continues until someone is called out. //
+
+#include <iostream>
+#include <string>
+#include <vector>
+#include <fstream>
+#include <cstdlib> 
+#include <ctime>    
+#include <fstream>
+using namespace std;
+
+
+
+struct Player {
+    string name;          
+    vector<int> dice;     // Vector to hold the 5 random dice numbers
+
+    void rollDice() {     //declares a function to get players 5 numbers, void makes sure it doesnt hold the info
+        dice.clear();     //clears values so new number can be made for next player
+        for (int i = 0; i < 5; i++) {    //Loop that repeats 5 times for each dice
+            int roll = rand() % 6 + 1;   // gets random number for 6 sides of dice
+            dice.push_back(roll);        // Adds the dice values to dice vector
+        }
+    }
+};
+
+
+void displayRules() {        //creates function to call file 
+    ifstream file("rules.txt");   //reads file 
+    string line;                  //variable to read the lines from txt
+
+    if (!file) {            //Checks if file can be read and ends program if it cant
+        cout << "ERROR: Could not open rules.txt\n";
+        return;
+    }
+
+    while (getline(file, line)) { //reads each line of txt and prints it to terminal
+        cout << line << endl;
+    }
+
+    cout << "\nPress ENTER to continue";
+    cin.ignore();        //makes sure user can read rules before the code starts running
+}
+
+
+
+int main() {
+
+    srand(time(0)); //used so program can choose different numbers each time
+
+    //calls display rules funtion creates brfore main
+    displayRules();
+
+    //asks for number of players
+    int numPlayers;
+    cout << "How many players? (enter at least 2)";
+    cin >> numPlayers;
+
+    //Loop to make sure they eneter at least 2
+    while (numPlayers < 2) {
+        cout << "Not enough players. Enter 2 or more: ";
+        cin >> numPlayers;
+    }
+
+    //This creates a vector with how many players there are
+    vector<Player> players(numPlayers);
+
+    //This will roll 5 dice using the player structure created above 
+    for (int i = 0; i < numPlayers; i++) {
+        players[i].name = "Player " + to_string(i + 1); 
+        players[i].rollDice();   
+    }
+
+    //Create variables 
+    int currentPlayer = 0;
+    int lastQuantity = 0;    //used for how many dice guess
+    int lastFace = 0;        //used for how many faces they guess
+    bool roundOver = false;  //used to keep round going until someone calls liar
+
+
+    while (!roundOver) {
+        
+        //shows which players turn it is
+        cout << "\n" << players[currentPlayer].name << "'s turn.\n";
+        cout << "Your dice are: ";
+
+        //prints the current players dice
+        for (int d : players[currentPlayer].dice)
+            cout << d << " \n";
+     
+    }
+
+
+
+}
