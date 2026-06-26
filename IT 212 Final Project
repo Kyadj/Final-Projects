@@ -1,0 +1,62 @@
+I: Key considerations:
+The new office needs to provide high-speed internet for video teleconferencing and large data transfers. I recommend fiber optic cabling as it can handle high speed and the capacity for large data transfers. This would be layer 1, the physical layer, that deals with the physical connection between devices such as cables. Next the data link layer which defines rules and procedures for hosts, will be operated by ethernet using switches to manage MAC addresses and ensuring data is sent where it needs to. The network layer follows which is responsible for how data is routed across networks and identifying hosts, will use private IP addressing to avoid conflicts with public IP addresses so the company ensures there will be enough IP addresses for all devices. Next the transport layer, which handles connections services, will be managed by TCP protocols, which will be useful for video conferencing. Next the session layer, which manages connections between applications. Then the presentation layer which translates data between the application layer and the network, can be handled by encryption protocols. And finally, the application layer which integrated network functionality into host operating systems and enables communication.
+Network Hardware components needed include routers and switches for network trafficking, wireless access points for mobility, firewalls for security, servers for internal services, and video conferencing equipment.
+II: Lan topology: 
+Possible LAN topologies:
+1.	Bus topology: All devices are connected to a single central cable. This set-up is cost-efficient and simple to set up, but you start to see performance issues as more devices get added and it’s more vulnerable to cable failures.
+2.	Ring topology: Devices are connected to a circular line of cables. This set-up is more vulnerable to disruptions as if a single connection fails it’s difficult to find as you must go to each cable to figure out what’s causing the problem. 
+3.	Star topology: Dives all connect to a single hub or switch. This set-up is easy to manage and expand, and a failure to one device doesn’t affect the rest of the network. However, depending on one single hub can cause all devices to fail if there’s an issue. 
+4.	Mesh topology: Each device has multiple paths connecting to each other. It has higher reliability and performance as it has multiple paths for data to travel. However, it is higher cost and more complex to set up.
+5.	Hybrid topology: Combines two or topologies together to take advantage of the different strengths each one can offer. However, it can be complex to design and manage correctly. 
+ Recommendation: I recommend a mesh topology for the office. As each device is connected to each other by multiple paths if one fails it doesn’t stop the network since data has traveled down another route. It reduces congestion as data can travel through the paths more evenly. It’s easy to expand the network as adding devices doesn’t require massive changes to the network. With multiple routes, it’s harder for breaches to disrupt the network, making it more secure. 
+III: Key considerations for a provider:
+	First is availability, make sure the providers you are researching are in your area and if they do, that they offer the correct speeds you are looking for. Speed: the provider must offer high-speed internet to be able to support the company’s teleconferencing and sending of large print jobs. As well as the providers should have scalability options as the company grows and needs higher speeds. Security: the provider should have features such as a secure VPN and firewall to protect sensitive data and ensure secure communications from cyberattacks. Reliability: looking into reliability and uptime can determine if that provider has frequent outages as they can be disruptive for business operations. Equipment: Look into the type of modem and routers the company may provide, some may charge a rental fee while the free ones may not be able to handle high enough speeds. Cost and contract: for any plans that may be similar look into the cost of each as well as how long of contracts they require. Some providers let you cancel the contracts for a fee while some may offer lower priced plans that increase after a couple months. It is important to look at the fine print when looking at cost. Finally, look at customer support and see how helpful and reliable they are at answering your questions and their response time to fixing issues. 
+Internet provider suggestions:
+1.	Spectrum:
+a.	Availability: Available in Fayetteville, NC.
+b.	Speed: 100 – 500 MBPS
+c.	Cost and contracts: $30 - $109, Says 2-year price guarantee.
+d.	Reliability: Says 99.9% uptime. 
+e.	Customer support: 24/7 support
+f.	Security: Has antivirus software, firewall, security suite on up to 10 devices, browsing protection, antibot scanner. 
+g.	Equipment: Modem provided for no fees. Router for a monthly fee. Or you can use your own
+h.	Extra: Free access to nationwide hotspots, bundles with TV and phone, Some plans include streaming. 
+2.	CenturyLink:
+a.	Availability: Available in Fayetteville, NC.
+b.	Speed: 20- 100 Mbps with DSL. Or up to 940 Mbps with fiber.
+c.	Cost and contracts: $50 for DSL. $75 for fiber. Some plans offer a ‘price for life’ so the price won’t change if you have service. No long-term contracts. Unlimited data. 
+d.	Reliability: Says 99.9% uptime. Good if in an area where fiber is available. 
+e.	Customer service: 24/7 support.
+f.	Security: Has secure VPN, antivirus, and parental controls. 
+g.	Equipment: Modem and router available for purchase or rental fee. Or use your own. 
+h.	Extra: Offers home phone and TV bundles, as well as limited access to public Wi-Fi hotspots.
+	Based on these two choices Spectrum would be the better option. They provide much higher speeds for less money, and better speeds using fiber. As well as having nationwide hotspots for any remote and mobile employees. 
+IV: Additional configurations:
+	Hardware and software: For routers and switches, the office should use the Cisco ISR 1100 series with the Cisco Catalyst 9200 series as they are reliable and offer high performance. Cisco’s equipment has extensive features and is compatible with enterprise setups. For access points, use the Cisco Meraki MR46 as it supports the latest standards, which provides better performance and coverage. For VPN, use Cisco AnyConnect, it is widely used and offers strong security features such as encryption and authentication. It is also compatible with various devices and operating systems. For management tools, use Cisco DNA, which provides network management and analytics. For collaboration software, use Microsoft teams or zoom which offers many different teleconferencing features including video, audio, and screen sharing. They integrate well with a variety or hardware setups. 
+	Printer: They should use a HP LaserJet Enterprise MFP M528dn, which is a reliable model that can support high-volume printing, scanning, and copying and has options for secure printing and easy management. They should implement a windows print server which manages and controls all printing tasks in an office. It provides centralized management, print job tracking, and is easier to troubleshoot. Next, they should implement a universal print drive which works with many different printers making it easier to connect and print without added complexity. For print management software they should implement Papercut MF which offers print job tracking, secure print release, as well as quota management. For cloud print services they should implement Microsoft universal print which provides simplified remote printing and centralized control.
+	Bandwidth and device solutions: They will need high-speed internet connection to support clear and uninterrupted video and audio calls. They should get Fiber optic cables as it provides high bandwidth and low latency. Configuring QoS settings will help prioritize teleconferencing traffic the ensure the video is transmitted smoothly when the network is under heavy load.  For devices they should use high-quality cameras and microphones such as Logitech or Cisco which offer integrated video, audio, and collaboration features. Speakers from Bose or Jabra are high quality and will ensure clear audio. 
+	
+
+III. Network Diagram.
+
+
+
+
+V: Potential Errors.
+1.	Common network errors:
+a.	Connectivity issues: They may face connectivity issues if they have any problems with cabling and network devices.
+b.	Latency: If there is a lot of heavy traffic, the network may experience latency, which will affect their teleconferencing and data transfers.
+c.	Printer connection failures: Issues such as dropped connections or print job failures can disrupt printing tasks which will lead to delays in operations. 
+2.	Troubleshooting approach:
+a.	Identify the part of the network where the issue originates, for example if teleconferencing is experiencing latency issues, they should examine the network traffic in those services. This ensures the problem is narrowed down quickly.
+b.	Perform continuous ping tests to measure latency across different segments of the networks. Replace cables, upgrade hardware, or implement QoS to prioritize traffic. This will help isolate the cause of the latency and lead to smoother teleconferencing and data transfers. 
+c.	Start by checking network logs to identify where there are connection issues, this ensures the print jobs are correctly routed and the network is not overloaded. They should also make sure large print jobs are being sent during lower traffic times. This ensures the printer connections stay stable and minimizes downtime. 
+VI: Additional Considerations: 
+1.	Network monitoring:
+a.	Monitor the status of network interfaces on devices such as routers and switches to ensure they are operating correctly. 
+b.	Regularly scan network ports to detect unathorized or unused open ports that could be a potential security vulnerability. 
+c.	Monitor the flow of packets through the network to help identify unusual traffic patterns to deal with them quickly and efficiently. 
+2.	Patch management:
+a.	Implementing Microsoft SCCM will be helpful to test and deploy patches across the network. Automated systems reduce the risk of vulnerabilities by ensuring devices are up to date with the latest security patches. They should also implement a test environment to test the patches in before putting them on the hole network. That will minimize the risk of compatibility issues or disruptions. 
+3.	Inventory control:
+a.	They should implement a tool such as Spiceworks which is a software platform that can manage and troubleshoot devices, monitor network, and inventory management. It also has a help desk to manage support tickets, track issues, and communicate with users. It can monitor the status of network devices and provide alerts for potential issues such as outages and slowdowns. This tool automatically discovers, and catalogs devices connected to the network. It can track hardware and software, ensuring they know what resources are available and their status. It can also track which devices need updates making it easier and quicker to manage patching across the network. 
