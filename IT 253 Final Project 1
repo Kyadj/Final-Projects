@@ -1,0 +1,33 @@
+IT 253 Project One Memo Template
+
+
+DATE: 7/31/2025
+
+TO: Company Leadership
+
+FROM: Information Security Manager
+
+SUBJECT: Information security posture
+
+Introduction: 
+Improving information security is important to keep the business running efficiently and protecting our customers’ sensitive data. During the evaluation, we found several weaknesses that if taken advantage of by attackers, could lead to outages and data loss. If these are not taken care of immediately, operations will be disrupted which will harm the trust with our customers and cost the organization instead of gaining.
+Laws and Regulations: 
+Sarbanes-Oxley Act (SOX) requires that companies have strict access controls to protect financial data and have accurate reporting. This means that our company is influenced by this law to maintain who has control over each sensitive area of our system. As well as needing to make sure that backups are in place and any changes within the system are reported correctly. If these requirements are not met, the company could face fines, penalties, and damage to reputation between shareholders. By strengthening our information security, we ensure we are compliant with SOX and avoid any unnecessary fines. 
+Technical Controls: 
+1.	Backups were kept on-site and were not encrypted: I recommend encrypting all data whether it is at rest or in transit as data can be stolen even within the company and it is important that even if it is taken that they are unable to read it. 
+2.	System and security logs are not being stored in a central location: I recommend implementing a centralized storage system alongside monitoring tools so all traffic can be reviewed and suspicious activity found much quicker. 
+3.	IT staff reported to be using a shared account and were unsure of what their responsibilities are: I recommend every member of staff have their own account, this makes sure if mistakes happen, we are aware of who the responsibility goes to. Also implementing access controls for each member will ensure each person knows their responsibility and cannot work on anything that they are not high enough level for. 
+4.	Over 35% had anti-virus definitions over 30 days old: I recommend implementing regular updates to each system to make sure they are protected from known viruses. The longer each system goes without an update the more risk to the companies’ systems and data. 
+Administrative Controls: 
+1.	The current information security policy has not been updated in four years: I recommend updating the security policy. A 4-year-old policy would not cover newly found threats and would leave the team unaware of how to manage them if they were to happen. It is important to train your team thoroughly. 
+2.	When speaking to employees, we found that they were unaware of what to do when they receive phishing or other suspicious emails: I recommend training programs be implemented for all social engineering techniques. Having employees aware of what to look out for will risk human error within the company. 
+3.	No business continuity plan or disaster recovery plan exists.: I recommend a business continuity plan and disaster recovery plan be put in place. Without a plan, if an outage were to happen the system would be down for days causing massive loss of sales, trust, and customers.
+Physical Controls:
+1.	Any employee or visitor with a badge could access the space: I recommend role-based restriction be in place for badges so only certain personnel can access certain areas inside. This reduces the risk of sensitive data being stolen or misused. 
+2.	Our team was able to access your headquarters building without a valid badge. We simply waited near a side entrance and followed another employee inside.: I recommend training on tailgating and piggybacking as no employee should be allowing unathorized people into the building without verifying their identity first. Or allowing them to enter with them by being nice and holding the door open.
+3.	Our assessors noticed that many workstations were actively logged on and accessible, but no employees were using them.: I recommend automatic locking on all computers so if an employee were to forget to log off before walking away the computer would automatically do it after a set time. 
+Business Impact: 
+These recommendations ensure that business is not interrupted by easily avoidable mistakes and plans get put in place so that even if a breach happens the team knows what to do and how to manage it quickly and efficiently. Employee training reduces human error and makes sure the team is aware of what to look for and how to report any suspicious behavior. All these recommendations will save the organization time, money, and resources by ensuring everything is up to date and protected before issues occur which would cost them much more along the line. 
+
+Conclusion: 
+Addressing these issues is not about ‘if’ it happens it is a ‘when.’ Outside and insider threats are constantly changing and getting stronger and its essential for operations that these technical, administrative, and physical problems be taken care of to reduce vulnerabilities to protect our sensitive data. 
