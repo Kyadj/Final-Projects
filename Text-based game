@@ -1,0 +1,195 @@
+print('The Phoenix game') print('To win you will need to gather 6 items before reaching the phoenix.') print('Move Commands are: go north, go south, go east, go west') print("or enter 'exit' when asked where to go to end the game")
+
+Rooms = { 'Entrance Hall': {'South': 'Dining Hall'}, 'Dining Hall': {'West': 'Mages Quarter'}, 'Barracks': {'North': 'Dining Hall', 'South': 'Guard room', 'East': 'Tower'}, 'Tower': {'West': 'Barracks'}, 'Mages Quarters': {'East': 'Dining Hall'}, 'Bathroom': {'East': 'Guard room'}, 'Guard Room': {'North': 'Barracks', 'West': 'Bathroom', 'South': 'Dungeon'}, 'Dungeon': {'North': 'Guard room'} } Inventory = [] current_room = 'Entrance Hall'
+
+while current_room != 'exit': while current_room == 'Entrance Hall': print('You begin in the Entrance Hall') print('Which way would you like to go?') direction = str(input()) print('------------------------') if direction == 'go south': current_room = 'Dining Hall' elif direction == 'exit': current_room = 'exit' else: print('------------------------') print('You hit a wall try another direction')
+
+while current_room == 'Dining Hall':
+	print('You made it to the Dining Hall')
+	print('Backpack:', Inventory)
+	if 'Invisibility potion' not in Inventory:
+		print('while searching the room you see an invisibility potion has rolled under the table!')
+		item = str(input('Would you like to grab it?'))
+		if item == 'yes':
+			Inventory.insert(0, 'Invisibility potion')
+		else:
+			print('Well come back if you think you might need it!')
+	print('Which way would you like to go?')
+	direction = str(input())
+	if direction == 'go south':
+		current_room = 'Barracks'
+	elif direction == 'go west':
+		current_room = 'Mages Quarters'
+	elif direction == 'go north':
+		current_room = 'Entrance Hall'
+	elif direction == 'go east':
+		print('------------------------')
+		print('You hit a wall try another direction')
+	elif direction == 'exit':
+		current_room = 'exit'
+	else:
+		print("Hmm i haven't heard of that direction before")
+	print('------------------------')
+
+while current_room == 'Barracks':
+	print('You made it to the Barracks!')
+	print('Backpack:', Inventory)
+	if 'Armor' not in Inventory:
+		print('You see a shiny set of Armor in the corner that could be just your size!')
+		item = str(input('Would you like to grab the Armor?'))
+		if item == 'yes':
+			Inventory.insert(2, 'Armor')
+		else:
+			print('Well come back if you think you might need it!')
+	print('Where would you like to go?')
+	direction = str(input())
+	if direction == 'go south':
+		current_room = 'Guard Room'
+	elif direction == 'go west':
+		print('------------------------')
+		print('You hit a wall try another direction')
+	elif direction == 'go north':
+		current_room = 'Barracks'
+	elif direction == 'go east':
+		current_room = 'Tower'
+	elif direction == 'exit':
+		current_room = 'exit'
+	else:
+		print("Hmm i haven't heard of that direction before")
+	print('------------------------')
+
+while current_room == 'Mages Quarters':
+	print('You made it to the Mages Quarters!')
+	print('Backpack:', Inventory)
+	if 'Health potion' not in Inventory:
+		print('While looking around you spot a health potion on the table.')
+		item = str(input('This could be useful, would you like to grab it?'))
+		if item == 'yes':
+			Inventory.insert(1, 'Health potion')
+		else:
+			print('Well come back if you think you might need it!')
+	print('Where would you like to go?')
+	direction = str(input())
+	if direction == 'go south':
+		print('------------------------')
+		print('You hit a wall try another direction')
+	elif direction == 'go west':
+		print('------------------------')
+		print('You hit a wall try another direction')
+	elif direction == 'go north':
+		print('------------------------')
+		print('You hit a wall try another direction')
+	elif direction == 'go east':
+		current_room = 'Dining Hall'
+	elif direction == 'exit':
+		current_room = 'exit'
+	else:
+		print("Hmm i haven't heard of that direction before")
+	print('------------------------')
+
+while current_room == 'Tower':
+	print('You made to the Tower!')
+	print('Backpack:', Inventory)
+	if 'Shield' not in Inventory:
+		print('You see a shield by the window.')
+		item = str(input('This could help block some damage, would you like to grab it?'))
+		if item == 'yes':
+			Inventory.insert(3, 'Shield')
+		else:
+			print('Well come back if you think you might need it!')
+	print('Where would you like to go?')
+	direction = str(input())
+	if direction == 'go south':
+		print('------------------------')
+		print('You hit a wall try another direction')
+	elif direction == 'go west':
+		current_room = 'Barracks'
+	elif direction == 'go north':
+		print('------------------------')
+		print('You hit a wall try another direction')
+	elif direction == 'go east':
+		print('------------------------')
+		print('You hit a wall try another direction')
+	elif direction == 'exit':
+		current_room = 'exit'
+	else:
+		print("Hmm i haven't heard of that direction before")
+	print('------------------------')
+
+while current_room == 'Bathroom':
+	print('You are in the bathroom.')
+	print('Backpack:', Inventory)
+	if 'Bow and Arrows' not in Inventory:
+		print('You see a bow and arrows someone left in the stall, Yuck!')
+		item = str(input('Would you like to grab them?'))
+		if item == 'yes':
+			Inventory.insert(4, 'Bow and Arrows')
+		else:
+			print('Well come back if you think you might need it!')
+	print('Where would you like to go?')
+	direction = str(input())
+	if direction == 'go south':
+		print('------------------------')
+		print('You hit a wall try another direction')
+	elif direction == 'go west':
+		print('------------------------')
+		print('You hit a wall try another direction')
+	elif direction == 'go north':
+		print('------------------------')
+		print('You hit a wall try another direction')
+	elif direction == 'go east':
+		current_room = 'Guard Room'
+	elif direction == 'exit':
+		current_room = 'exit'
+	else:
+		print("Hmm i haven't heard of that direction before")
+	print('------------------------')
+
+while current_room == 'Guard Room':
+	print('You sneak into the guard room')
+	print('Backpack:', Inventory)
+	if 'Fire resistence' not in Inventory:
+		print('You see a Fire resistence potion on the shelf.')
+		item = str(input('Would you like to grab it?'))
+		if item == 'yes':
+			Inventory.insert(5, 'Fire resistence')
+		else:
+			print('Well come back if you think you might need it!')
+	print('Where would you like to go?')
+	direction = str(input())
+	if direction == 'go south':
+		current_room = 'Dungeon'
+	elif direction == 'go west':
+		current_room = 'Bathroom'
+	elif direction == 'go north':
+		current_room = 'Barracks'
+	elif direction == 'go east':
+		print('------------------------')
+		print('You hit a wall try another direction')
+	elif direction == 'exit':
+		current_room = 'exit'
+	else:
+		print("Hmm i haven't heard of that direction before")
+	print('------------------------')
+
+while current_room == 'Dungeon':
+	print('You have found The Phoenix!!!')
+	if Inventory == ['Invisibility potion', 'Health potion', 'Armor', 'Shield', 'Bow and Arrows', 'Fire resistence']:
+		print('Good, you have gathered your 6 items needed to fight!')
+		print('You use that invisibility potion to sneak into the room and get high ground!')
+		print('Those bow and arrows come in handy as you get above.')
+		print('The Phoenix tries to fight back but your armor and shield protect you from the blunt attacks!')
+		print('Another spray of Arrows from you knocks the phoenix down.')
+		print('Oh no! the phenix is going to burst into flames before it turns into ash!')
+		print('Good thing you found that fire resist potion!')
+		print('Good job phenix slayer!')
+		print('As the guards run in after hearing all the commotion you are left standing there over a pile of ash!')
+		print('You walk out knowing you will be well known!')
+		current_room = 'exit'
+	else:
+		print('Oh no! you dont seem to have gotten all the items needed to defeat the phoenix!')
+		print('You try to sneak in to attack, but you are to slow and the phoenix sees you!')
+		print('You are defeated!')
+		print('Better luck next time!')
+		current_room = 'exit'
+if current_room == 'exit': print("Thank you for playing!")
